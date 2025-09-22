@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop Gaming",
+        "price": 15000000,
+        "description": "Laptop berperforma tinggi untuk kebutuhan gaming anda."
+    },
+    {
+        "id": 2,
+        "name": "Smartphone Pro",
+        "price": 8000000,
+        "description": "Smartphone dengan kamera canggih dan performa cepat."
+    },
+    {
+        "id": 3,
+        "name": "Smartwatch",
+        "price": 2500000,
+        "description": "Jam tangan pintar untuk memantau kesehatan dan aktivitas."
+    },
+    {
+        "id": 4,
+        "name": "Headset Bluetooth",
+        "price": 750000,
+        "description": "Headset nirkabel dengan kualitas suara jernih."
+    },
+    {
+        "id": 5,
+        "name": "Keyboard Mechanical",
+        "price": 1200000,
+        "description": "Keyboard mekanikal dengan switch responsif untuk gaming."
+    },
+    {
+        "id": 6,
+        "name": "Mouse Wireless",
+        "price": 400000,
+        "description": "Mouse tanpa kabel dengan sensor presisi tinggi."
+    },
+    {
+        "id": 7,
+        "name": "Monitor 27 Inch",
+        "price": 3500000,
+        "description": "Monitor full HD dengan refresh rate tinggi."
+    },
+    {
+        "id": 8,
+        "name": "Printer Inkjet",
+        "price": 2000000,
+        "description": "Printer berkualitas tinggi dengan cetakan tajam."
+    },
+    {
+        "id": 9,
+        "name": "Tablet 10 Inch",
+        "price": 5000000,
+        "description": "Tablet serbaguna untuk hiburan dan produktivitas."
+    },
+    {
+        "id": 10,
+        "name": "Speaker Portable",
+        "price": 600000,
+        "description": "Speaker portabel dengan bass yang kuat."
+    },
+    {
+        "id": 11,
+        "name": "Camera DSLR",
+        "price": 12000000,
+        "description": "Kamera DSLR profesional untuk fotografi berkualitas tinggi."
+    },
+    {
+        "id": 12,
+        "name": "Flashdisk 64GB",
+        "price": 150000,
+        "description": "Media penyimpanan portabel dengan kapasitas 64GB."
+    },
+    {
+        "id": 13,
+        "name": "External Harddisk 1TB",
+        "price": 1200000,
+        "description": "Penyimpanan eksternal besar untuk data penting anda."
+    },
+    {
+        "id": 14,
+        "name": "Smart TV 43 Inch",
+        "price": 7000000,
+        "description": "Smart TV dengan dukungan aplikasi streaming terbaru."
+    },
+    {
+        "id": 15,
+        "name": "Powerbank 20000mAh",
+        "price": 500000,
+        "description": "Powerbank kapasitas besar untuk perjalanan jauh."
+    },
+    {
+        "id": 16,
+        "name": "Drone Camera",
+        "price": 8500000,
+        "description": "Drone dengan kamera 4K untuk fotografi udara."
+    },
+    {
+        "id": 17,
+        "name": "Gaming Chair",
+        "price": 2500000,
+        "description": "Kursi gaming ergonomis untuk kenyamanan bermain."
+    },
+    {
+        "id": 18,
+        "name": "VR Headset",
+        "price": 6000000,
+        "description": "Headset VR untuk pengalaman realitas virtual yang imersif."
+    },
+    {
+        "id": 19,
+        "name": "Microphone USB",
+        "price": 900000,
+        "description": "Mikrofon USB berkualitas untuk streaming dan recording."
+    },
+    {
+        "id": 20,
+        "name": "Projector Mini",
+        "price": 3000000,
+        "description": "Proyektor mini portabel untuk presentasi dan hiburan."
+    }
+]
