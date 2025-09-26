@@ -1,0 +1,27 @@
+<!-- filepath: d:\Kuliah\PAW 1\Clone\project-express-js-JonathanStevanus\toko-online\views\product-details.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if (products) { %>
+      <% products.forEach(function(product) { %>
+        <div class="product">
+          <h2><%= product.name %></h2>
+          <p>Price: $<%= product.price.toLocaleString('id-ID') %></p>
+          <p><%= product.description %></p>
+          <a href="/">Kembali ke Beranda</a>
+        </div>
+      <% }); %>
+    <% } else if (product) { %>
+      <div class="product">
+        <h2><%= product.name %></h2>
+        <p>Price: $<%= product.price.toLocaleString('id-ID') %></p>
+        <p><%= product.description %></p>
+        <a href="/">Kembali ke Beranda</a>
+      </div>
+    <% } %>
+  </body>
+</html>
