@@ -15,7 +15,7 @@
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title"><%= product.name %></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Price: $<%= product.price.toLocaleString('id-ID') %></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Harga: <%= product.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }) %></h6>
                 <p class="card-text"><%= product.description %></p>
                 <a href="/products/<%= product.id %>" class="btn btn-primary">Detail Produk</a>
               </div>
