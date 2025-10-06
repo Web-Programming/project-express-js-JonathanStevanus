@@ -1,5 +1,3 @@
-//install paket mongoose menggunakan npm: npm install mongoose
-
 const mongoose = require('mongoose');
 const dbURI = 'mongodb://localhost:27017/paw2-si5c';
 

@@ -1,6 +1,9 @@
  var express = require('express');
  var router = express.Router();
 var controllerMain = require('../controllers/main');
+var searchController = require('../controllers/search');
+router.get('/', controllerMain.index);
+router.get('/search', searchController.searchByID);
 
 
 /* GET home page. */
@@ -10,18 +13,17 @@ var controllerMain = require('../controllers/main');
 //      products:products });
 //  });
 
-router.get('/', controllerMain.index);
 
- router.get('/search', function(req, res, next) {
-    const query = req.query.q;
-    const filteredProducts = products.filter(q =>
-        q.name.toLowerCase().includes(query.toLowerCase()) ||
-        q.description.toLowerCase().includes(query.toLowerCase())
-    );
+//  router.get('/search', function(req, res, next) {
+//     const query = req.query.q;
+//     const filteredProducts = products.filter(q =>
+//         q.name.toLowerCase().includes(query.toLowerCase()) ||
+//         q.description.toLowerCase().includes(query.toLowerCase())
+//     );
 
-    res.render('index', {
-        title: 'Hasil Pencarian: ' + query,
-        products: filteredProducts
-    });
-});
+//     res.render('index', {
+//         title: 'Hasil Pencarian: ' + query,
+//         products: filteredProducts
+//     });
+// });
  module.exports = router;

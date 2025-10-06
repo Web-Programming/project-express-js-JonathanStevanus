@@ -10,6 +10,7 @@ var engine = require('ejs-blocks');
 var indexRouter = require('./app_toko_online/routes/index');
 var usersRouter = require('./app_toko_online/routes/users');
 var productsRouter = require('./app_toko_online/routes/products');
+var controllerProducts = require('./app_toko_online/controllers/ControllerProducts');
 var app = express();
 
 // view engine setup
@@ -29,7 +30,6 @@ app.use('/bootstrap', express.static(path.join(__dirname, '../node_modules/boots
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
 app.use('/products', productsRouter);
 
 // catch 404 and forward to error handler
