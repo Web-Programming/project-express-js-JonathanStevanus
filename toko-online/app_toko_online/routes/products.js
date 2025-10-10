@@ -1,10 +1,12 @@
 var express=require('express');
 var router=express.Router();
+
 // var products=require('../../data/products');
 var reviewController=require('../controllers/ControllerReview');
 var controllerProducts=require('../controllers/ControllerProducts');
 router.get('/:productId/reviews/:reviewId', reviewController.getReview);
-router.get('/:id',controllerProducts.getProductById);
+router.get('/all',controllerProducts.index);
+router.get('/:id',controllerProducts.detail);
 
 
 

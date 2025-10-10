@@ -5,6 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var engine = require('ejs-blocks');
+require('./app_toko_online/models/db');//memanggil file db.js untuk koneksi ke database
 
 //perbaikan 2
 var indexRouter = require('./app_toko_online/routes/index');
@@ -12,6 +13,7 @@ var usersRouter = require('./app_toko_online/routes/users');
 var productsRouter = require('./app_toko_online/routes/products');
 var controllerProducts = require('./app_toko_online/controllers/ControllerProducts');
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname,'app_toko_online', 'views'));//perbaikan 1
