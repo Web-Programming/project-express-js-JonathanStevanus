@@ -12,7 +12,9 @@ var indexRouter = require('./app_toko_online/routes/index');
 var usersRouter = require('./app_toko_online/routes/users');
 var productsRouter = require('./app_toko_online/routes/products');
 var controllerProducts = require('./app_toko_online/controllers/ControllerProducts');
+var controllerUser = require('./app_toko_online/controllers/controllerUser');
 var apiProductRouter=require("./app_toko_online/routes/api/product");
+var apiUserRouter=require("./app_toko_online/routes/api/user"); 
 var app = express();
 
 
@@ -29,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //serving bootstrap
 app.use('/bootstrap', express.static(path.join(__dirname, '../node_modules/bootstrap/dist')));
 app.use("/api/produk", apiProductRouter);
-
+app.use("/api/user",apiUserRouter);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

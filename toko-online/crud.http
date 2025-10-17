@@ -1,27 +1,29 @@
 # melihat semua data produk
-# get http://localhost:3000/api/produk
+get http://localhost:3000/api/user
 
 #menambahkan data produk baru
-# post http://localhost:3000/api/produk
-# Content-Type: application/json
+post http://localhost:3000/api/user
+Content-Type: application/json
 
-# {
-#   "name": "Mouse Gaming 2",
-#   "price":"350000",
-#   "description":"Mouse gaming dengan DPI tinggi",
-#   "stock":"20"
-# }
+{
+
+"username":"JamalSkibidi",
+"email":"jamalskibidi@gmail.com",
+"password":"jamalskibidi123",
+"address":"bandung",
+"isAdmin":"false"
+}
 
 # melihat data produk berdasarkan id
 # get http://localhost:3000/api/produk/68e8d3fda85f3e6886396fa1
 
 
 //update product
-PUT  
-Content-Type: application/json
-{
-  "name": "Mouse Gaming Pro",
-  "price":"450000",
-  "description":"Mouse gaming dengan DPI sangat tinggi",
-  "stock":"15"
-}
+# PUT  
+# Content-Type: application/json
+# {
+#   "name": "Mouse Gaming Pro",
+#   "price":"450000",
+#   "description":"Mouse gaming dengan DPI sangat tinggi",
+#   "stock":"15"
+# }
