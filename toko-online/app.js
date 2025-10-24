@@ -13,8 +13,10 @@ var usersRouter = require('./app_toko_online/routes/users');
 var productsRouter = require('./app_toko_online/routes/products');
 var controllerProducts = require('./app_toko_online/controllers/ControllerProducts');
 var controllerUser = require('./app_toko_online/controllers/controllerUser');
+var controllerOrder = require('./app_toko_online/controllers/controllerOrder');   
 var apiProductRouter=require("./app_toko_online/routes/api/product");
 var apiUserRouter=require("./app_toko_online/routes/api/user"); 
+var apiOrderRouter=require("./app_toko_online/routes/api/order");
 var app = express();
 
 
@@ -32,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(path.join(__dirname, '../node_modules/bootstrap/dist')));
 app.use("/api/produk", apiProductRouter);
 app.use("/api/user",apiUserRouter);
-
+app.use("/api/order",apiOrderRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
